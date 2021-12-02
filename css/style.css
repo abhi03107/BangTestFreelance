@@ -30,6 +30,19 @@ a{
     position: relative;
     display: flex;
 }
+.cursor-point{
+    cursor: pointer;
+}
+img{
+    object-fit: cover;
+    width: 75%;
+}
+.icons{
+    width: auto;
+}
+.footer-pad{
+    padding-bottom: 50px;
+}
 .landing-screen{
     position: relative;
     background-color: #0145C0;
@@ -41,6 +54,7 @@ a{
 .nav-fix{
     position: relative;
     display: flex;
+    height: 10vh;
     top: 5vh;
     width: 90vw;
     justify-content: space-between;
@@ -48,7 +62,9 @@ a{
     z-index: 999;
     padding: 0 5vw;
 }
-
+.nav-head{
+    margin-left: 50px;
+}
 .logo img{
     height: 72px;
     width: 80px;
@@ -66,7 +82,7 @@ a{
 .bang-btn-text{
     color: #fff;
     height: 100%;
-    font-family: Roboto, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -152,12 +168,12 @@ a{
 }
 .landing-content{
     position: relative;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
     flex-direction: row;
-    bottom: -20vh;
     z-index: 2;
 }
 .landing-text{
@@ -167,17 +183,24 @@ a{
     line-height: 80px;
     letter-spacing: 1px;
     color: #fff;
-    margin-top: -40vh;
+    margin-top: -20vh;
 }
 .color-orange{
     color: #FF8044;
 }
+.color-black{
+    color: #060E25;
+}
+.color-blue{
+    color: #0145C0;
+}
 .landing-image{
     position: relative;
-    margin-top: -12.5vh;
 }
 .landing-image img{
-    transform: scale(1.15) rotate(1.83deg);
+    transform: scale(1.2) rotate(1.83deg);
+    width: 100%;
+
 }
 .overlap-mobile{
     position: absolute;
@@ -252,7 +275,7 @@ a{
     font-weight: normal;
     font-size: 21px;
     line-height: 30px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: #959FB3;
     width: 75%;
     z-index: 2;
@@ -271,7 +294,10 @@ a{
     opacity: 0.31;
 }
 .service-card{
+    position: relative;
+    display: flex;
     z-index: 2;
+    justify-content: center;
 }
 .blue-screen{
     position: relative;
@@ -318,6 +344,9 @@ a{
     top: 0;
     left: 0;
 }
+.dot-pattern img{
+    width: auto;
+}
 .white-desc{
     color: #FFF;
 }
@@ -347,9 +376,15 @@ a{
     height: 100%;
 }
 .long-side{
-    width: 50vw;
+    width: 60vw;
+}
+.long-side-xl{
+    width: 60vw;
 }
 .short-side{
+    width: 30vw;
+}
+.short-side-xs{
     width: 30vw;
 }
 .vertical-center{
@@ -522,7 +557,7 @@ a{
 
 .upgrade-head>.content-title, .upgrade-head>.content-desc, .upgrade-head>.srt-desc{
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0 5px;
 }
 .upgrade-head-que{
     width: 90vw;
@@ -605,6 +640,9 @@ a{
 .small-width{
     width: 35vw;
 }
+.small-width-xs{
+    width: 25vw;
+}
 .mid-shadow-right{
     width: 500px;
     height: 500px;
@@ -630,6 +668,14 @@ a{
     top: -15vh;
     left: 0;
 }
+.bottom-left-shadow{
+    position: relative;
+}
+.bottom-left-shadow img{
+    position: absolute;
+    bottom: 0vh;
+    left: 0;
+}
 .bottom-right-shadow {
     position: relative;
 }
@@ -647,11 +693,15 @@ a{
     text-align: left;
 }
 .flex-multi-img{
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 20px;
 }
 .multi-image{
     margin-right: 50px;
     margin-left: 0;
+    width: auto;
     cursor: pointer;
 }
 .reverse-left>.multi-image{
@@ -660,4 +710,155 @@ a{
 .multi-wrap{
     display: block!important;
     padding: 0 12.5%;
+}
+.digit-group-form{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.digit-group{
+    position: relative;
+    display: block;
+    margin-top: 25px;
+}
+.digit-group-input{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.digit-group input[type=number] {
+    width: 70px;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.082);
+    border-radius: 6px;
+    border: none;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Poppins-Bold", sans-serif;
+    font-weight: 200;
+    color: #0145C0;
+    margin: 0 2px;
+}
+.digit-group input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.digit-group input[type=number] {
+    -moz-appearance: textfield;
+}
+.digit-group input[type=submit]{
+    margin-top: 50px;
+}
+.long-btn{
+    width: 180px;
+    height: 50px;
+    background-color: #0145C0;
+    color: #FFFFFF;
+    border-radius: 2px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/*subscription*/
+.nav-left{
+    justify-content: flex-start;
+}
+.subscription{
+    margin-top: 100px;
+}
+.sub-details{
+    margin: 20px 0;
+}
+.sub-wrap{
+    align-items: flex-start;
+}
+.icon-wrap-sub{
+    width: 60px;
+}
+.mid-desc{
+    font-family: "Poppins-Bold";
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+} 
+.mid-big{
+    font-size: 32px;
+}
+.left-img{
+    margin-left: 0;
+    margin-right: auto;
+}
+.img-xl{
+    width: 90%;
+}
+.billing-provider-list{
+    display: inline-block;
+    margin: 0px 0 25px;
+}
+.billing-detail-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.billing-provider-content{
+    margin-left: 20px;
+}
+.billing-content-head{
+    font-family: "Poppins",sans-serif;
+    color: #959FB3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.billing-content-desc{
+    font-family: "Poppins-SemiBold";
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+.personal-detail-wrap{
+    margin-top: 150px;
+}
+.margin-25{
+    margin-top: 25px;
+}
+.person-checkout{
+    position: relative;
+    bottom: 0;
+    height: 75px;
+    width: 90vw;
+    background: #FFFFFF;
+    box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.11);
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-summary{
+    position: relative;
+    display: flex;
+}
+.ver-line::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 25px;
+    height: 30px;
+    width: 0.5px;
+    opacity: 0.7;
+    background-color: #959FB3;
+}
+.x-plan{
+    margin-left: 50px;
 }
