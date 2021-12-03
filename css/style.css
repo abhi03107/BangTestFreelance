@@ -40,14 +40,35 @@ img{
 .icons{
     width: auto;
 }
+.icons-small{
+    width: 25px;
+}
 .footer-pad{
-    padding-bottom: 50px;
+    padding-bottom: 50px!important;
 }
 .margin-left-25{
     margin-left: 20px;
 }
+.margin-left-25{
+    margin-left: 50px;
+}
 .margin-top-25{
     margin-top: 25px;
+}
+.margin-bottom-25{
+    margin-bottom: 25px;
+}
+.mob-pad-top-100{
+    padding-top: 100px;
+}
+.mob-pad-top-50{
+    padding-top: 50px;
+}
+.margin-top-none{
+    margin-top: 0;
+}
+.margin-bottom-none{
+    margin-bottom: 0;
 }
 .landing-screen{
     position: relative;
@@ -133,6 +154,10 @@ img{
     cursor: pointer;
     text-transform: uppercase;
 }
+.long-btn-transparent{
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
 .round-btn{
     border: 1px solid #FFF;
     border-radius: 25px;
@@ -141,11 +166,41 @@ img{
     background-color: #FF0000;
     border: 1px solid transparent;
     border-radius: 5px;
-    width: 150px;
+    width: 180px;
     height: 50px;
     line-height: 19px;
     cursor: pointer;
     transition: 0.25s ease-in;
+}
+.disable-btn{
+    background-color: #D2D2D2;;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+    line-height: 19px;
+    cursor:not-allowed;
+    transition: 0.25s ease-in;
+}
+.white-btn{
+    background-color: #FFF;
+    border: 1px solid #FFF;
+}
+.green-btn{
+    background-color: #23ce01;
+    border: 1.5px solid #23ce01;
+}
+.shadow-btn{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+}
+.left-multi-btn{
+    margin-left: auto;
+}
+.btn-img{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .bang-call-btn:hover{
     background-color: #fff;
@@ -228,6 +283,12 @@ img{
     color: #fff;
     margin-top: -20vh;
 }
+.color-light-green{
+    color: chartreuse;
+}
+.color-red{
+    color: #FF0000;
+}
 .color-orange{
     color: #FF8044;
 }
@@ -236,6 +297,9 @@ img{
 }
 .color-blue{
     color: #0145C0;
+}
+.color-green{
+    color: #2BAC3F;
 }
 .landing-image{
     position: relative;
@@ -378,7 +442,7 @@ img{
     border-radius: 50%;
     right: 0;
     bottom:0;
-    opacity: 0.2;
+    opacity: 0.15;
     background: #4D97F6;
     box-shadow: 0px 0px 220px 160px #468FEB;
 }
@@ -703,6 +767,20 @@ img{
     opacity: 0.4;
     transform: translate(5%,-35%);
 }
+.top-shadow-right{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+.bottom-shadow-right{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 15%;
+    right: 10vw;
+}
 .top-shadow{
     position: relative;
 }
@@ -732,6 +810,7 @@ img{
     padding: 0 5vw;
     margin-top: 15vh;
 }
+
 .reverse-left>.align{
     text-align: left;
 }
@@ -825,7 +904,9 @@ input::-webkit-inner-spin-button {
     display: none;
 }
 .mid-big{
+    font-family: "Poppins-Bold";
     font-size: 32px;
+    letter-spacing: 0.5px;
 }
 .left-img{
     margin-left: 0;
@@ -833,6 +914,12 @@ input::-webkit-inner-spin-button {
 }
 .img-xl{
     width: 90%;
+}
+.icon-wrap-sub{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .billing-provider-list{
     display: inline-block;
@@ -868,11 +955,11 @@ input::-webkit-inner-spin-button {
 .person-checkout{
     position: relative;
     bottom: 0;
-    height: 75px;
+    height: auto;
     width: 90vw;
     background: #FFFFFF;
     box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.11);
-    padding: 0 5vw;
+    padding: 15px 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -912,7 +999,22 @@ input::-webkit-inner-spin-button {
     overflow: hidden;
 }
 
-.icons-small{
-    width: 5px;
-    height: 5px;
+/*pending*/
+.semibold-text-small{
+    font-size: 20px;
+    font-family: "Poppins-SemiBold";
+}
+.semi-text-small{
+    font-size: 16px;
+    font-family: "Poppins";
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+.bold-text-mid{
+    font-size: 36px;
+    font-family: "Poppins-Bold";
+    color: #000000;
+}
+.mob-pad-lr-50, .pad-lr-50{
+    padding: 0 5vw;
 }

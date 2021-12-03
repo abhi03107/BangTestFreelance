@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/responsive.css" type="text/css">
+    <title>Bang!</title>
+</head>
+<body>
+    <div class="landing-screen screen1">
+        <div class="nav-fix">
+            <a href="./index.html"><div class="logo"><img src="./img/logo.png"></div></a>
+        </div>
+        <div class="circle-design">
+            <div class="left-circle"></div>
+            <div class="right-circle"></div>
+            <div class="eclipse-shadow"></div>
+        </div>
+        <div class="block-box">
+            <div class="upgrade-head vertical-center upgrade-landing">
+                <div class="content-desc upgrade-head-que small-width white-desc">Enter your <span class="color-orange">BANG!</span> Code</div>
+                <div class="srt-desc small-width white-desc">we sent this by text</div>
+                <form action="" method="post" class="digit-group small-width-xs" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                    <div class="digit-group-input">
+                        <input type="number" id="digit-1" name="digit-1" data-next="digit-2" maxlength="1" />
+                        <input type="number" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" maxlength="1" />
+                        <input type="number" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" maxlength="1" />
+                        <input type="number" id="digit-4" name="digit-4"  data-previous="digit-3" maxlength="1" />
+                    </div>    
+                    <input type="submit" value="Continue" class="long-btn white-desc shadow-btn">
+                </form>
+                <div class="srt-desc white-desc small-width">Lost your code? <span class="color-orange cursor-point">Resend</div>
+            </div>
+        </div>
+        <script src="./js/jquery-3.6.0.js"></script> 
+        <script src="./js/bang-code.js"></script> 
+    </div>
+</body>
+</html>
